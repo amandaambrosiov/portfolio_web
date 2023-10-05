@@ -1,35 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: #181818;
+
+::-webkit-scrollbar-track {
+    background-color: #313131;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background: #313131;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a842ff;
+    border-radius: 8px;
+}
+
+body {
+    background-color: #0e0e0e;
     font-family: 'Gabarito', cursive;
 }
-.iheader{
-   
+
+.iheader {
     padding: 25px;
 }
 
-a.ilogo{
-    
+a.ilogo {
+
     text-decoration: none;
-    color:white;
+    color: white;
     font-size: 30px;
-    
+
 }
 
-.row{
+.row {
     margin-left: 5rem;
     margin-right: 5rem;
 }
-.introduce{
-    margin-top: 8rem;
+
+.introduce {
+    margin-top: 4.5rem;
     font-size: 70px;
     color: #a842ff;
 }
-.descricao{
+
+.descricao {
     color: white;
     font-size: 30px;
     border-right: 4px solid;
@@ -38,96 +56,209 @@ a.ilogo{
     overflow: hidden;
     animation: typing 2s steps(25), blinking 0.5s infinite step-end alternate;
 }
+
+.animate-btn {
+    display: flex;
+    justify-content: center;
+    color: #a842ff;
+    font-size: 30px;
+    margin-bottom: 4rem;
+    cursor: pointer;
+}
+
 @keyframes typing {
     from {
-      width: 0;
+        width: 0;
     }
-  }
-  
-  @keyframes blinking {
+}
+
+@keyframes blinking {
     50% {
-      border-color: transparent;
+        border-color: transparent;
     }
-  }
-  .detail{
+}
+
+.detail {
     margin-top: 20px;
     color: grey;
     font-size: 20px;
     width: 40%;
-  }
-  .detail span{
+}
+
+.detail span {
     color: #a842ff;
     font-size: 20px;
-  }
-.ibtn{
+}
+
+.ibtn {
     border: none;
     background-color: #a842ff;
     color: white;
     padding: 15px 50px;
     border-radius: 5px;
     margin-top: 25px;
+    margin-bottom: 4rem;
     transition: padding 0.6s linear;
 }
-.ibtn:hover{
-    padding: 15px 60px ;
-} 
 
+.ibtn:hover {
+    padding: 15px 60px;
+}
+
+.icontainer {
+    position: fixed;
+    background-color: #080808;
+    bottom: 0;
+    width: 100%;
+    /* height: 50px; */
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.designed {
+    font-size: 15px;
+    text-decoration: none;
+    color: #a842ff;
+}
+
+.copyright {
+    font-size: 15px;
+    text-decoration: none;
+    color: #a842ff;
+}
+
+.iconcopy {
+    margin-right: 7px;
+    margin-left: 7px;
+    color: #a842ff;
+}
+
+.icontactfooter {
+    font-size: 15px;
+}
+
+.icontactfooter a {
+    text-decoration: none;
+    color: #a842ff;
+}
+
+.itemicon {
+    margin-right: 2rem;
+}
+
+.sec2 {
+    border: 2px solid #313131;
+    background-color:#131313;
+    transition: border 0.6s linear; /*função para transição do hover*/
+    border-radius: 5px;
+    padding: 20px 30px;
+    margin-left: 16rem;
+    margin-right: 16rem;
+    margin-bottom: 6rem;
+}
+
+.sec2:hover {
+    border: 2px solid #aa16ff; 
+}
+.title_s{
+    color: #a842ff;
+    font-size: 30px;
+}
+.subtitle_s{
+    color: white;
+    font-size: 45px;
+}
+.subtitle2_s{
+    color: #a842ff;
+    font-size: 30px;
+}
+.description_s{
+    margin-top: 2rem;
+    font-size: 20px;
+    width: 60%;
+    color: #636363;
+}
+.contactmain_s{
+    margin-top: 2rem;
+    margin-bottom: 30px;
+}
+.contact_s{
+    border: 2px solid #313131;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    color: #aa16ff;
+    transition: border 0.6s linear; /*função para transição do hover*/
+}
+.contact_s:hover{
+    border: 2px solid #aa16ff;
+}
 /* RESPONSIVIDADE PARA CELULAR */
 @media screen {
-    @media (min-width:900px){
-        .ilogo{
+    @media (min-width:900px) {
+        .ilogo {
             margin-left: 4rem;
         }
-        .imenu{
+
+        .imenu {
             display: none;
         }
-        .menuright{
+
+        .menuright {
             display: flex;
             float: right;
             margin-top: 5px;
-            
+
         }
-        .menuright a{
+
+        .menuright a {
             text-decoration: none;
-            color:white;
+            color: white;
             margin-right: 5rem;
             padding: 4px 10px;
             position: relative;
             /* border: 2px solid grey; */
             /* transition: border 0.6s linear; */
         }
-        .menuright a::before{
+.menuright a:hover{
+    color: #6b6b6b;
+}
+        .menuright a::before {
             content: "";
-          position: absolute;
-          width: 100%;
-          height: 3px;
-          bottom: 0;
-          left: 0;
-          background-color: #a842ff;
-          visibility: hidden;
-          -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-          -webkit-transition: all 0.3s ease-in-out 0s;
-          transition: all 0.3s ease-in-out 0s;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: #a842ff;
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
         }
+
         .menuright a:hover:before {
             visibility: visible;
             -webkit-transform: scaleX(1);
             transform: scaleX(1);
-          }
-        /* .menuright a:hover{ */
-            /* border: 2px solid #aa16ff; */
-            /* color: #a5a5a5;
-        } */
+        }
+
+         
     }
-    @media(max-width:900px){
-        .ilogo{
+
+    @media(max-width:900px) {
+        .ilogo {
             margin-left: 0rem;
         }
-        .menuright{
+
+        .menuright {
             display: none;
         }
-        .imenu{
+
+        .imenu {
             display: flex;
             float: right;
             background: none;
@@ -136,14 +267,17 @@ a.ilogo{
             color: white;
             margin-top: 8px;
         }
-        .row{
+
+        .row {
             margin-left: 2rem;
         }
-        .introduce{
+
+        .introduce {
             margin-top: 3rem;
         }
-        .detail{
-            width:85%;
+
+        .detail {
+            width: 85%;
         }
     }
 }
