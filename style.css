@@ -60,10 +60,16 @@ a.ilogo {
 .animate-btn {
     display: flex;
     justify-content: center;
-    color: #a842ff;
+    text-decoration: none;
     font-size: 30px;
     margin-bottom: 4rem;
     cursor: pointer;
+}
+.animatebt{
+    color: #a842ff;
+}
+.animatebt:hover{
+    color: #aa16ff;
 }
 
 @keyframes typing {
@@ -187,12 +193,13 @@ a.ilogo {
     margin-right: 20px;
     border-radius: 5px;
     padding: 20px;
-    color: #aa16ff;
+    color: #313131;
     transition: border 0.6s linear; /*função para transição do hover*/
     font-size: 20px;
 }
 .contact_s:hover{
     border: 2px solid #aa16ff;
+    color: #aa16ff;
 }
 /* RESPONSIVIDADE PARA CELULAR */
 @media screen {
