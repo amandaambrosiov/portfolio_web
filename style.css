@@ -44,13 +44,13 @@ body {
 }
 
 .introduce {
-    animation: aparecer 3s;
+    /* animation: aparecer 3s; */
     margin-top: 4.5rem;
     font-size: 70px;
     color: #a842ff;
 }
 
-.descricao {
+/* .descricao {
     animation: aparecer 3s;
     color: white;
     font-size: 30px;
@@ -59,7 +59,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     animation: typing 2s steps(25), blinking 0.5s infinite step-end alternate;
-}
+} */
 
 .animate-btn {
     animation: aparecer 3s;
@@ -79,17 +79,7 @@ body {
     color: #aa16ff;
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-}
 
-@keyframes blinking {
-    50% {
-        border-color: transparent;
-    }
-}
 
 .detail {
     margin-top: 20px;
@@ -172,10 +162,20 @@ a.ibtn {
     /*função para transição do hover*/
     border-radius: 5px;
     padding: 20px 30px;
-    margin-left: 16rem;
-    margin-right: 16rem;
+    /* margin-left: 16rem; */
+    /* margin-right: 16rem; */
     margin-bottom: 6rem;
+    
 }
+
+.perfil1{
+    display: flex;
+    align-items: center;
+}
+/* .perfil{
+    width: 600;
+    height: 600;
+} */
 
 .sec2:hover {
     border: 2px solid #aa16ff;
@@ -205,7 +205,7 @@ a.ibtn {
 
 }
 
-@keyframes aparecer {
+/* @keyframes aparecer {
     0% {
         margin-top: 1rem;
     }
@@ -213,7 +213,7 @@ a.ibtn {
     100% {
         margin-top: 4.5rem;
     }
-}
+} */
 
 .contactmain_s {
     margin-top: 2rem;
@@ -316,6 +316,27 @@ a.ibtn {
             -webkit-transform: scaleX(1);
             transform: scaleX(1);
         }
+        .descricao {
+            /* animation: aparecer 3s; */
+            color: white;
+            font-size: 30px;
+            border-right: 4px solid;
+            width: 28ch;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 2s steps(25), blinking 0.5s infinite step-end alternate;
+        }
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+        }
+        
+        @keyframes blinking {
+            50% {
+                border-color: transparent;
+            }
+        }
 
 
     }
@@ -345,10 +366,21 @@ a.ibtn {
 
         .introduce {
             margin-top: 3rem;
+            font-size: 40px;
         }
 
         .detail {
             width: 85%;
+        }
+        .descricao {
+            /* animation: aparecer 3s; */
+            color: white;
+            font-size: 30px;
+            /* border-right: 4px solid; */
+            /* width: 28ch; */
+            /* white-space: nowrap; */
+            overflow: hidden;
+            /* animation: typing 2s steps(25), blinking 0.5s infinite step-end alternate; */
         }
         
     }
