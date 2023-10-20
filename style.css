@@ -22,6 +22,7 @@
 body {
     background-color: #0e0e0e;
     font-family: 'Gabarito', cursive;
+    overflow-x: hidden;
 }
 
 .iheader {
@@ -36,11 +37,12 @@ body {
     width: 40px;
     height: 40px;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 .row {
     margin-left: 5rem;
-    margin-right: 5rem;
+    /* margin-right: 5rem; */
 }
 
 .introduce {
@@ -48,6 +50,7 @@ body {
     margin-top: 4.5rem;
     font-size: 70px;
     color: #a842ff;
+    max-width: 900px;
 }
 
 /* .descricao {
@@ -121,7 +124,8 @@ a.ibtn {
     justify-content: space-evenly;
 
 }
-.icontainer_c{
+
+.icontainer_c {
     background-color: #080808;
     bottom: 0;
     width: 100%;
@@ -131,16 +135,20 @@ a.ibtn {
     justify-content: space-evenly;
 }
 
+
 .designed {
     font-size: 15px;
     text-decoration: none;
     color: #a842ff;
+    padding-left: 7px;
+    cursor: pointer;
 }
 
 .copyright {
     font-size: 15px;
     text-decoration: none;
     color: #a842ff;
+    cursor: pointer;
 }
 
 .iconcopy {
@@ -161,17 +169,37 @@ a.ibtn {
     transition: border 0.6s linear;
     /*função para transição do hover*/
     border-radius: 5px;
-    padding: 20px 30px;
+    padding: 20px 20px;
     /* margin-left: 16rem; */
     /* margin-right: 16rem; */
     margin-bottom: 6rem;
-    
+    margin-right: 6rem;
+
 }
 
-.perfil1{
+.sec3 {
+    padding: 20px 20px;
+    margin-bottom: 6rem;
+    /* margin-right: 6rem; */
+/* position: absolute; */
+display: flex;
+justify-content: center;
+}
+
+.subtitle_skills {
+    color: white;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+
+.perfil1 {
     display: flex;
     align-items: center;
 }
+
 /* .perfil{
     width: 600;
     height: 600;
@@ -186,6 +214,11 @@ a.ibtn {
     font-size: 30px;
 }
 
+.title_skills {
+    color: #a842ff;
+    font-size: 30px;
+}
+
 .subtitle_s {
     color: white;
     font-size: 45px;
@@ -196,14 +229,7 @@ a.ibtn {
     font-size: 30px;
 }
 
-.description_s {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-size: 20px;
-    width: 60%;
-    color: #636363;
 
-}
 
 /* @keyframes aparecer {
     0% {
@@ -244,6 +270,7 @@ a.ibtn {
     margin-bottom: 4rem;
 
 }
+
 .contact_c {
     border: 2px solid #313131;
     margin-right: 20px;
@@ -262,9 +289,11 @@ a.ibtn {
     color: #aa16ff;
 }
 
-/* RESPONSIVIDADE PARA CELULAR */
+/* RESPONSIVIDADE */
+
+/* RESPONSIVIDADE APENAS PARA COMPUTADOR  */
 @media screen {
-    @media (min-width:900px) {
+    @media (min-width:950px) {
         .ilogo {
             margin-left: 4rem;
         }
@@ -316,6 +345,7 @@ a.ibtn {
             -webkit-transform: scaleX(1);
             transform: scaleX(1);
         }
+
         .descricao {
             /* animation: aparecer 3s; */
             color: white;
@@ -326,22 +356,62 @@ a.ibtn {
             overflow: hidden;
             animation: typing 2s steps(25), blinking 0.5s infinite step-end alternate;
         }
+
         @keyframes typing {
             from {
                 width: 0;
             }
         }
-        
+
         @keyframes blinking {
             50% {
                 border-color: transparent;
             }
         }
+        .description_s {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 20px;
+            width: 60%;
+            color: #636363;
+        
+        }
+        .myskills {
+            display: grid;
+            grid-template-columns: 400px 400px;
+            justify-content: center;
+        
+        }
+        
+        .icone {
+            display: grid;
+            justify-content: center;
+        }
+        
+        .skill_icon {
+            display: grid;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 30px;
+            background-color: #131313;
+            border: 1px solid #a842ff;
+            padding: 30px 80px;
+            margin: 1rem 5rem;
+            border-radius: 8px;
+            transition: all .2s ease-in-out;
+            color: #a842ff;
+        }
+        
+        .skill_icon:hover {
+            transform: scale(1.1);
+        }
+        
 
 
     }
 
-    @media(max-width:900px) {
+    /* RESPONSIVIDADE APENAS PARA CELULAR  */
+    @media(max-width:950px) {
         .ilogo {
             margin-left: 0rem;
         }
@@ -361,7 +431,10 @@ a.ibtn {
         }
 
         .row {
-            margin-left: 2rem;
+            /* margin-left: 0; */
+            /* margin-right: 2rem; */
+            /* display: flex; */
+            /* justify-content: center; */
         }
 
         .introduce {
@@ -372,6 +445,7 @@ a.ibtn {
         .detail {
             width: 85%;
         }
+
         .descricao {
             /* animation: aparecer 3s; */
             color: white;
@@ -382,6 +456,67 @@ a.ibtn {
             overflow: hidden;
             /* animation: typing 2s steps(25), blinking 0.5s infinite step-end alternate; */
         }
+
+        .contactmain_s {
+            display: grid;
+            grid-template-columns: 80px 80px;
+
+        }
+
+        .icone {
+            display: grid;
+            justify-content: center;
+        }
+        .description_s {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 20px;
+            /* width: 60%; */
+            color: #636363;
         
+        }
+        .skill_icon {
+            display: grid;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 40px;
+            background-color: #131313;
+            border: 1px solid #a842ff;
+            padding: 30px 80px;
+            margin: 1rem 1rem ;
+            border-radius: 8px;
+            transition: all .2s ease-in-out;
+            color: #a842ff;
+        }
+
+        .skill_icon:hover {
+            transform: scale(1.1);
+        }
+
+        .myskills {
+            display: grid;
+            grid-column: auto;
+            /* justify-content: center; */
+        }
+
+        .contact_s {
+            margin-bottom: 30px;
+        }
+
+        .sec2 {
+
+            border: 2px solid #313131;
+            background-color: #131313;
+            transition: border 0.6s linear;
+            /*função para transição do hover*/
+            border-radius: 5px;
+            padding: 20px 20px;
+            /* margin-left: 16rem; */
+            /* margin-right: 16rem; */
+            margin-bottom: 6rem;
+            margin-right: 2rem;
+
+        }
+
     }
 }
