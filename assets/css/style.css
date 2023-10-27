@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
 }
+/* .row>*{
+max-width: 90%;
+margin-left: -0px;
+} */
 
 ::-webkit-scrollbar-track {
     background-color: #313131;
@@ -40,9 +44,13 @@ body {
     cursor: pointer;
 }
 
-.row {
+.row1 {
     margin-left: 5rem;
     /* margin-right: 5rem; */
+}
+.row2{
+margin-left: 2rem;
+max-width: 90%;
 }
 
 .introduce {
@@ -171,9 +179,16 @@ a.ibtn {
     padding: 3rem 0;
     /* height: 100vh; */
 }
-.p_skils{
+
+.p_skils {
+    margin-top: 30px;
     max-width: 80%;
     color: #636363;
+    display: none;
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #a842ff;
 }
 
 .subtitle_skills {
@@ -192,9 +207,7 @@ a.ibtn {
     height: 600;
 } */
 
-.sec2:hover {
-    border: 2px solid #aa16ff;
-}
+
 
 .title_s {
     color: #a842ff;
@@ -286,6 +299,7 @@ a.ibtn {
     border-radius: 8px;
     margin-right: 2rem;
     margin-bottom: 1rem;
+    margin-left: 1.5rem;
     padding: 20px 20px;
     transition: border 0.6s linear;
     transition: all 0.7s ease-in-out;
@@ -322,6 +336,9 @@ a.ibtn {
         .ilogo {
             margin-left: 4rem;
         }
+        .sidemenu{
+            display: none;
+        }
 
         .imenu {
             display: none;
@@ -331,8 +348,6 @@ a.ibtn {
             display: flex;
             float: right;
             margin-top: 5px;
-            /* margin-left: 19rem; */
-            /* border: 2px solid red; */
 
         }
 
@@ -342,8 +357,6 @@ a.ibtn {
             margin-right: 5rem;
             padding: 4px 10px;
             position: relative;
-            /* border: 2px solid grey; */
-            /* transition: border 0.6s linear; */
         }
 
         .menuright a:hover {
@@ -376,15 +389,15 @@ a.ibtn {
             color: white;
             font-size: 30px;
             border-right: 4px solid;
-            width: 28ch;
+            width: 31ch;
             white-space: nowrap;
             overflow: hidden;
-            animation: typing 2s steps(25), blinking 0.5s infinite step-end alternate;
+            animation: typing 2s steps(11), blinking 0.5s infinite step-end alternate;
         }
 
         @keyframes typing {
             from {
-                width: 0;
+                width: 20ch;
             }
         }
 
@@ -422,6 +435,10 @@ a.ibtn {
             color: #a842ff;
         }
 
+        .skill_icon i {
+            padding-top: 15px;
+        }
+
         .skill_icon p {
             font-weight: lighter;
         }
@@ -443,6 +460,9 @@ a.ibtn {
             margin-bottom: 6rem;
             /* margin-right: 6rem; */
 
+        }
+        .sec2:hover {
+            border: 2px solid #aa16ff;
         }
 
 
@@ -467,6 +487,39 @@ a.ibtn {
             font-size: 30px;
             color: white;
             margin-top: 8px;
+        }
+
+        .sidemenu {
+            display: block;
+            height: 0px;
+            width: 105%;
+            z-index: 1;
+            background-color: #131313;
+            overflow-x: hidden;
+            overflow: hidden;
+            transition: 0.5s linear;
+            display: flex;
+            justify-content: center;
+            /* margin-right: 5px; */
+        }
+
+        .sidemenu a {
+            text-decoration: none;
+            color: #a842ff;
+            font-family: 'Paytone One', sans-serif;
+            display: flex;
+            text-align: row;
+            padding: 7px;
+
+        }
+
+        .myfsidemenu a:hover {
+            background-color: #a842ff;
+            color: #fffffc;
+        }
+
+        .open {
+            height: 40px;
         }
 
         .introduce {
@@ -541,6 +594,17 @@ a.ibtn {
 
         }
 
+        .contactmain_s {
+            max-width: 100%;
+        }
+
+        .sec2 {
+            background: none;
+            border: none;
+            display: flex;
+            justify-content: center;
+        }
+
     }
 }
 
@@ -566,4 +630,19 @@ a.ibtn {
     transform: scale(1.1);
     border: 2px solid #a842ff;
     color: #a842ff;
+}
+@media (min-width: 768px){
+.container, .container-md, .container-sm {
+    max-width: 1500px;
+}
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
 }

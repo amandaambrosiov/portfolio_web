@@ -36,22 +36,33 @@
                 <a id="botaoscroll" href="#sec2">About me</a>
                 <a id="botaoscroll" href="#sec3">Skills</a>
                 <a id="botaoscroll" href="#sec4">Projects</a>
-                <a href="contact.html">Contact</a>
+                <a href="portugues.html"><i class="fa-solid fa-earth-americas icone"></i></a>
+                <!-- <a href="contact.html">Contact</a> -->
             </div>
             <!-- MENU RESPONSIVO  -->
             <button id="imenu" class="imenu" onclick="changeNav()"><i class="fa-solid fa-bars"></i></button>
         </div>
+        <div id="sidemenu" class="sidemenu">
+
+            <a href="index.html">Home</a>
+            <a href="#sec2">About</a>
+            <a href="#sec3">Skills</a>
+            <a href="#sec4">Projects</a>
+            <a href="portugues.html"><i class="fa-solid fa-earth-americas icone" style="margin-top: 3px;"></i></a>
+
+        </div>
+        </div>
     </header>
 
     <!-- INTRODUÇÃO DO SITE  -->
-    <section class="row">
+    <section class="row1">
         <div class="mysection">
             <h2 class="introduce">Hi! I'm Amanda Ambrosio</h2>
-            <h3 class="descricao">Designer and Front-End Developer</h3>
+            <h3 class="descricao">Designer and Front-End Developer 💻</h3>
             <p class="detail">Fusing <span>creativity</span> and <span>code</span> to create engaging digital
                 experiences. Explore my work and discover how I transform concepts into digital reality.</p>
             <div class="icontact">
-                <a class="ibtn" href="#">Contact me</a>
+                <a class="ibtn" href="#sec2">Contact me</a>
             </div>
             <div id="botaoscroll" class="animate-btn">
                 <a id="botaoscroll" href="#sec2"><i class="fa-solid fa-chevron-down fa-bounce animatebt"></i></a>
@@ -74,18 +85,26 @@
                 <h2 class="title_s">About me</h2>
                 <h1 class="subtitle_s">Amanda Ambrosio</h1>
                 <h1 class="subtitle2_s">Web Developer & Graphic and Web Designer</h1>
-                <p class="description_s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                    consequatur eaque
-                    veniam laboriosam doloribus esse quasi necessitatibus, reiciendis similique ratione
-                    fugiat harum soluta
-                    sunt ducimus autem explicabo expedita quae ipsa?</p>
-                <nav class="contactmain_s">
+                <p class="description_s">Hello, and welcome! I'm Amanda, a young front-end developer passionate about
+                    creating incredible digital experiences. My goal is to bring websites and applications to life with
+                    outstanding functionality and captivating design.
+
+                    Despite my age, I am determined to delve into the world of programming and design. I'm constantly
+                    learning and seeking ways to improve my skills, always in search of exciting projects to work on.
+
+                    This is my space to share my front-end development journey and showcase the projects I've been
+                    working on. I invite you to explore my portfolio and follow my growth as I continue to refine my
+                    skills in this thrilling digital creation journey. </p>
+                <nav class="contactmain_s" id="contact">
                     <div class="container text-center">
-                        <div class="row" style="margin-left: -25px;">
-                            <a href="" class="contact_s col"><i class="fa-brands fa-github"></i></a>
-                            <a href="" class="contact_s col"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="" class="contact_s col"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="" class="contact_s col"><i class="fa-regular fa-envelope"></i></a>
+                        <div class="row">
+                            <a href="https://github.com/amandaambrosiov" class="contact_s col"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="#" class="contact_s col"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/amanda_ambrosio_/" class="contact_s col"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="amandaambrosio295@gmail.com" class="contact_s col"><i
+                                    class="fa-regular fa-envelope"></i></a>
                         </div>
                     </div>
                 </nav>
@@ -96,47 +115,55 @@
                 </div> -->
             </section>
 
-            <section class="sec3" id="sec3">
-                <div class="container">
-                    <div class="row" style="margin-left: -25px;">
-                        <div class="col">
+            <section class="sec3 row row2" id="sec3">
                             <h2 class="title_projects">Skills</h2>
-                            <p class="p_skils">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi ea atque
-                                repellendus nostrum officia dignissimos laudantium sapiente tempora? Facere perferendis
-                                quod quam optio cupiditate accusamus deserunt odit nisi, ullam provident.</p>
-                        </div>
-                        <nav class="myskills col">
-                            <div class="container ">
-                                <div class="row" style="margin-left: -25px;">
-                                    <a href="" class=" skill_icon col"><i class="fa-brands fa-git-alt icone"></i>
-                                        <p>Git</p>
-                                    </a>
-                                    <a href="" class=" skill_icon col"><i class="fa-brands fa-github icone"></i>
-                                        <p>Github</p>
-                                    </a>
-                                    <a href="" class=" skill_icon col"><i class="fa-brands fa-bootstrap icone"></i>
-                                        <p>Bootstrap</p>
-                                    </a>
-                                    <a href="" class=" skill_icon col"><i class="fa-brands fa-square-js icone"></i>
-                                        <p>Javascript</p>
-                                    </a>
+                            <nav class="myskills">
+                                <div class="container ">
+                                    <div class="row">
+                                        <a class=" skill_icon col" id="git"><i class="fa-brands fa-git-alt icone"></i>
+                                            <p>Git</p>
+                                        </a>
+                                        <a class=" skill_icon col" id="github"><i class="fa-brands fa-github icone"></i>
+                                            <p>Github</p>
+                                        </a>
+                                        <a class=" skill_icon col" id="bootstrap"><i
+                                                class="fa-brands fa-bootstrap icone"></i>
+                                            <p>Bootstrap</p>
+                                        </a>
+                                        <a class=" skill_icon col" id="javascript"><i
+                                                class="fa-brands fa-square-js icone"></i>
+                                            <p>Javascript</p>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
+                            </nav>
+                            <p class="p_skils" id="p_git">Git has helped me in several ways in my journey as a
+                                developer. It simplified code version control, allowing me to track and revert changes
+                                with ease. Furthermore, collaboration became more efficient, making teamwork more
+                                productive.</p>
+
+                            <p class="p_skils" id="p_github">GitHub has been essential in my experience as a developer.
+                                It provides a centralized space to store and share my projects, facilitating
+                                collaboration with other developers. Furthermore, the visibility that GitHub offers to
+                                my work is valuable for building my reputation in the development community.</p>
+
+                            <p class="p_skils" id="p_bootstrap">Bootstrap has been an essential ally in my journey as a
+                                developer. It offers a wide range of ready-to-use components and styles, speeding up the
+                                process of creating attractive and responsive interfaces. Its CSS framework makes
+                                customization and web project maintenance easier. Additionally, Bootstrap's
+                                cross-platform compatibility ensures that my applications work well on different
+                                devices, saving time and effort.</p>
+
+                            <p class="p_skils" id="p_javascript">JavaScript has been essential in my experience as a
+                                developer. It is the essential programming language for web development, enabling
+                                interactivity and dynamism in websites and applications. With JavaScript, I can create
+                                interactive features, validate forms, and enhance the user experience.</p>
             </section>
 
-            <section class="sec4" id="sec4">
+            <section class="sec4 row row2" id="sec4">
+                <h2 class="title_projects">Projects</h2>
                 <div class="container">
-                    <div class="row" style="margin-left: -25px;">
-                        <div class="col">
-                            <h2 class="title_projects">Projects</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row" style="margin-left: 7px; margin-right:5px;">
+                    <div class="row" >
                         <div class="Projects col">
                             <header>
                                 <h4 class="headerproject">Form</h4>
@@ -147,16 +174,7 @@
                             </footer>
 
                         </div>
-                        <div class="Projects col">
-                            <header>
-                                <h4 class="headerproject">New web class model</h4>
-                            </header>
-                            <p class="pproject">Developed as a team to improve a class model at the "Escola de Gestão
-                                Pública".</p>
-                            <footer class="footerproject">
-                                <a href="https://github.com/mariajamille/UX-Usabilidade-Na-Pratica-EGP">view project</a>
-                            </footer>
-                        </div>
+
                         <div class="Projects col">
                             <header>
                                 <h4 class="headerproject">Form EGP</h4>
@@ -170,7 +188,7 @@
                     </div>
 
                     <div class="container">
-                        <div class="row" style="margin-left: -5px; margin-right:-5px;">
+                        <div class="row" >
                             <div class="Projects col">
                                 <header>
                                     <h4 class="headerproject">Restaurant</h4>
@@ -180,6 +198,18 @@
                                     <a href="https://amandaambrosiov.github.io/bootstrap_restaurante/">view project</a>
                                 </footer>
 
+                            </div>
+                            <div class="Projects col">
+                                <header>
+                                    <h4 class="headerproject">New web class model</h4>
+                                </header>
+                                <p class="pproject">Developed as a team to improve a class model at the "Escola de
+                                    Gestão
+                                    Pública".</p>
+                                <footer class="footerproject">
+                                    <a href="https://github.com/mariajamille/UX-Usabilidade-Na-Pratica-EGP">view
+                                        project</a>
+                                </footer>
                             </div>
 
                         </div>
@@ -199,6 +229,8 @@
                         Ambrosio</a>
                 </div>
             </footer>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 </body>
 

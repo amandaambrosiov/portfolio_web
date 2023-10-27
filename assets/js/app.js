@@ -1,3 +1,7 @@
+function changeNav(){
+  document.getElementById("sidemenu").classList.toggle("open");
+}
+
 // Get the button:
 let mybutton = document.getElementById("myBtn");
 
@@ -17,3 +21,41 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+$('#git').mouseover(function(){
+  $('#p_git').css('display', 'block');
+});
+
+$('#git').mouseout(function(){
+  $('#p_git').css('display', 'none');
+});
+
+
+
+$('#github').mouseover(function(){
+  $('#p_github').css('display', 'block');
+});
+
+$('#github').mouseout(function(){
+  $('#p_github').css('display', 'none');
+});
+
+
+
+$('#bootstrap').mouseover(function(){
+  $('#p_bootstrap').css('display', 'block');
+});
+
+$('#bootstrap').mouseout(function(){
+  $('#p_bootstrap').css('display', 'none');
+});
+
+
+
+$('#javascript').mouseover(function(){
+  $('#p_javascript').css('display', 'block');
+});
+
+$('#javascript').mouseout(function(){
+  $('#p_javascript').css('display', 'none');
+});

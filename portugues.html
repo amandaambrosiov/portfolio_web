@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDN BOOTSTRAP  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- CDN FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- LINK DO JAVASCRIPT  -->
+    <script src="assets/js/app.js" defer></script>
+
+    <!-- LINK MEU CSS  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Portfolio // Amanda Ambrosio</title>
+</head>
+
+<body>
+    <header>
+        <div class="iheader">
+            <a><img class="ilogo" src="imgs/logo.png" alt=""></a>
+            <!-- MENU DO LADO DIREITO  -->
+            <div class="menuright">
+                <a href="index.html" class="active">Home</a>
+                <a id="botaoscroll" href="#sec2">Sobre mim</a>
+                <a id="botaoscroll" href="#sec3">Habilidades</a>
+                <a id="botaoscroll" href="#sec4">Projetos</a>
+                <a href="index.html"><i class="fa-solid fa-earth-americas icone"></i></a>
+                <!-- <a href="contact.html">Contact</a> -->
+            </div>
+            <!-- MENU RESPONSIVO  -->
+            <!-- MENU RESPONSIVO  -->
+            <button id="imenu" class="imenu" onclick="changeNav()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="sidemenu" class="sidemenu" style="margin-left: -9px;">
+
+            <a href="index.html">Home</a>
+            <a href="#sec2">Sobre mim</a>
+            <a href="#sec3">Habilidades</a>
+            <a href="#sec4">Projetos</a>
+            <a href="index.html"><i class="fa-solid fa-earth-americas icone" style="margin-top: 3px;"></i></a>
+
+        </div>
+        </div>
+    </header>
+
+    <!-- INTRODUÇÃO DO SITE  -->
+    <section class="row1">
+        <div class="mysection">
+            <h2 class="introduce">Olá! Eu sou Amanda Ambrosio</h2>
+            <h3 class="descricao">Designer e Desenvolvedora Front-End</h3>
+            <p class="detail">Combinando <span>criatividade</span> e <span>código</span> para criar conteúdo
+                com experiências digitais envolventes. Explore meu trabalho e descubra como transformo conceitos em
+                realidade digital.</p>
+            <div class="icontact">
+                <a class="ibtn" href="#sec2">Contate-me</a>
+            </div>
+            <div id="botaoscroll" class="animate-btn">
+                <a id="botaoscroll" href="#sec2"><i class="fa-solid fa-chevron-down fa-bounce animatebt"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- SECTION COM O SOBRE  -->
+    <div data-bs-spy="scroll" data-bs-target="#botaoscroll" data-bs-smooth-scroll="true" tabindex="0">
+        <div>
+
+            <section class="row sec2" id="sec2">
+
+                <!-- <div class="container text-center">
+                    <div class="row align-items-start"> -->
+
+                <!-- <div class="col"> -->
+                <h2 class="title_s">Sobre mim</h2>
+                <h1 class="subtitle_s">Amanda Ambrosio</h1>
+                <h1 class="subtitle2_s">Desenvolvedora web & Designer Grafico</h1>
+                <p class="description_s">Olá, seja bem-vindo! Sou Amanda, uma jovem desenvolvedora front-end apaixonada
+                    por criar experiências digitais incríveis. Meu objetivo é trazer à vida websites e aplicativos que
+                    se destacam pela funcionalidade e design atraente.
+
+                    Apesar de minha idade, estou determinada a me aprofundar no mundo da programação e design. Estou
+                    constantemente aprendendo e buscando maneiras de aprimorar minhas habilidades, sempre em busca de
+                    projetos empolgantes para trabalhar.
+
+                    Este é o meu espaço para compartilhar minha jornada de desenvolvimento front-end e mostrar os
+                    projetos em que tenho trabalhado. Convido você a explorar meu portfólio e acompanhar meu crescimento
+                    à medida que continuo a me aperfeiçoar nessa emocionante jornada de criação digital.</p>
+                <nav class="contactmain_s">
+                    <div class="container text-center">
+                        <div class="row" style="margin-left: -25px;">
+                            <a href="https://github.com/amandaambrosiov" class="contact_s col"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="" class="contact_s col"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/amanda_ambrosio_/" class="contact_s col"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="" class="contact_s col"><i class="fa-regular fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </nav>
+                <!-- </div> -->
+
+                <!-- <div class="col perfil1">
+                    <img class="perfil" src="..." alt="minha foto">
+                </div> -->
+            </section>
+
+            <section class="sec3 row row2" id="sec3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="title_projects">Habilidades</h2>
+                            <nav class="myskills col">
+                                <div class="container ">
+                                    <div class="row" style="margin-left: -25px;">
+                                        <a href="" class=" skill_icon col" id="git"><i
+                                                class="fa-brands fa-git-alt icone"></i>
+                                            <p>Git</p>
+                                        </a>
+                                        <a href="" class=" skill_icon col" id="github"><i
+                                                class="fa-brands fa-github icone"></i>
+                                            <p>Github</p>
+                                        </a>
+                                        <a href="" class=" skill_icon col" id="bootstrap"><i
+                                                class="fa-brands fa-bootstrap icone"></i>
+                                            <p>Bootstrap</p>
+                                        </a>
+                                        <a href="" class=" skill_icon col" id="javascript"><i
+                                                class="fa-brands fa-square-js icone"></i>
+                                            <p>Javascript</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <p class="p_skils" id="p_git">O Git me ajudou de diversas maneiras na minha jornada como
+                                desenvolvedora. Ele simplificou o controle de versão do código, permitindo que eu
+                                acompanhasse e revertesse alterações com facilidade. Além disso, a colaboração se tornou
+                                mais eficiente, tornando o trabalho em equipe mais produtivo.</p>
+
+                            <p class="p_skils" id="p_github">O GitHub tem sido fundamental na minha experiência como
+                                desenvolvedora. Ele fornece um espaço centralizado para armazenar e compartilhar meus
+                                projetos, facilitando a colaboração com outros desenvolvedores. Além disso, a
+                                visibilidade que o GitHub oferece ao meu trabalho é valiosa para construir minha
+                                reputação na comunidade de desenvolvimento.</p>
+
+                            <p class="p_skils" id="p_bootstrap">Bootstrap tem sido um aliado essencial na minha jornada
+                                como desenvolvedora. Ele oferece uma ampla gama de componentes e estilos prontos para
+                                uso, acelerando o processo de criação de interfaces atraentes e responsivas. Sua
+                                estrutura CSS facilita a personalização e manutenção de projetos web. Além disso, a
+                                compatibilidade multiplataforma do Bootstrap garante que minhas aplicações funcionem bem
+                                em diferentes dispositivos, economizando tempo e esforço.</p>
+
+                            <p class="p_skils" id="p_javascript">JavaScript tem sido fundamental na minha experiência
+                                como desenvolvedora. Ele é a linguagem de programação essencial para o desenvolvimento
+                                web, permitindo interatividade e dinamismo em sites e aplicativos. Com JavaScript, posso
+                                criar recursos interativos, validar formulários e melhorar a experiência do usuário.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec4 row row2" id="sec4">
+                <h2 class="title_projects">Projetos</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="Projects col">
+                            <header>
+                                <h4 class="headerproject">Formulário</h4>
+                            </header>
+                            <p class="pproject">Formulário modelo feito com HTML e CSS.</p>
+                            <footer class="footerproject">
+                                <a href="https://amandaambrosiov.github.io/formulario/">visualizar projeto</a>
+                            </footer>
+
+                        </div>
+
+                        <div class="Projects col">
+                            <header>
+                                <h4 class="headerproject">Formulário EGP</h4>
+                            </header>
+                            <p class="pproject">Formulário desenvolvido como proposta de atualização do site de cursos.
+                            </p>
+                            <footer class="footerproject">
+                                <a href="https://amandaambrosiov.github.io/formulario-egp/">visualizar projeto</a>
+                            </footer>
+                        </div>
+
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="Projects col">
+                                <header>
+                                    <h4 class="headerproject">Restaurante</h4>
+                                </header>
+                                <p class="pproject">Projeto desenvolvido para um restaurante italiano.</p>
+                                <footer class="footerproject">
+                                    <a href="https://amandaambrosiov.github.io/bootstrap_restaurante/">visualizar
+                                        projeto</a>
+                                </footer>
+
+                            </div>
+                            <div class="Projects col">
+                                <header>
+                                    <h4 class="headerproject">Novo modelo de aula web</h4>
+                                </header>
+                                <p class="pproject">Desenvolvido em equipe para melhorar um modelo de aulas na "Escola de
+                                    Gestão Pública".</p>
+                                <footer class="footerproject">
+                                    <a href="https://github.com/mariajamille/UX-Usabilidade-Na-Pratica-EGP">visualizar
+                                        projeto</a>
+                                </footer>
+                            </div>
+                        </div>
+
+
+
+            </section>
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+            <!-- FOOTER COM COPYRIGHT  -->
+            <footer class="icontainer">
+                <div>
+                    <a class="designed">Desenvolvido por Amanda Ambrosio</a>
+                </div>
+                <div>
+                    <a class="copyright">Copyright <i class="fa-regular fa-copyright iconcopy"></i>2023 Amanda
+                        Ambrosio</a>
+                </div>
+            </footer>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</body>
+
+</html>
