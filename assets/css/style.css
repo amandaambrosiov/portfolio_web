@@ -333,6 +333,10 @@ a.ibtn {
 /* RESPONSIVIDADE APENAS PARA COMPUTADOR  */
 @media screen {
     @media (min-width:950px) {
+        .row1 {
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
         .ilogo {
             margin-left: 4rem;
         }
@@ -471,6 +475,10 @@ a.ibtn {
 
     /* RESPONSIVIDADE APENAS PARA CELULAR  */
     @media(max-width:950px) {
+        .row1 {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
         .ilogo {
             margin-left: 0rem;
         }
@@ -586,8 +594,8 @@ a.ibtn {
             /*função para transição do hover*/
             border-radius: 5px;
             padding: 20px 20px;
-            margin-left: 6rem;
-            margin-right: 6rem;
+            /* margin-left: 6rem; */
+            /* margin-right: 6rem; */
             margin-bottom: 6rem;
             /* margin-left: 2rem; */
             /* margin-right: 2rem; */
